@@ -1,4 +1,4 @@
-extension Root {
+public extension Root {
     var filmsQuery: Query<PagedResponse<Film>> {
         return Query<PagedResponse<Film>>(url: self.films)
     }

@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Query<Entity> where Entity: Decodable {
-    let entityType = Entity.Type.self
-    let url: URL
+public struct Query<Entity> where Entity: EntityContract {
+    public let entityType = Entity.self
+    public let url: URL
 }
